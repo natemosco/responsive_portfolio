@@ -1,0 +1,120 @@
+@use "../../scss/font";
+@use "../../scss/mixins";
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    overflow-y: hidden;
+    width: 100%;
+    background-color: #ffa726;
+    @include mixins.flex(column, flex-start, center);
+    transition: height 0.3s linear;
+
+    li,
+    a,
+    h3,
+    button {
+        @include font.nav-font;
+        text-decoration: none;
+        list-style: none;
+        transition: filter 250ms;
+    }
+    h3 {
+        font-size: 1.4rem;
+        background-color: #ffa726;
+        color: white;
+        transition: color 200ms;
+    }
+    .nav_options {
+        width: 15rem;
+        margin-right: -2rem;
+        @include mixins.flex(row, space-between, center);
+        .menu_toggle:hover {
+            cursor: pointer;
+            h3 {
+                color: black;
+            }
+            .icon {
+                color: black;
+            }
+        }
+        .social_icons {
+            @include mixins.flex(row, space-evenly, center);
+            width: 50%;
+            // height: 50rem;
+            .github_icon {
+                color: white;
+                &:hover {
+                    color: black;
+                    // color: #f4cbb2;
+                    cursor: pointer;
+                }
+            }
+            .twitter_icon {
+                color: white;
+                &:hover {
+                    color: #00acee;
+                    cursor: pointer;
+                }
+            }
+            .linkedin_icon {
+                color: #0072b1;
+                color: white;
+                &:hover {
+                    color: #0072b1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    li {
+        background-color: snow;
+        &:hover {
+            filter: brightness(0.7);
+            cursor: pointer;
+        }
+    }
+}
+.container_expanded {
+    height: 10rem;
+}
+
+.menu_toggle {
+    width: 5rem;
+    height: 2.5rem;
+    @include mixins.flex(row, space-evenly, center);
+}
+.menu {
+    @include mixins.flex(row, space-between, center);
+    width: 100%;
+    height: 4rem;
+    padding: 30px 3%;
+
+    .logo {
+        width: 4rem;
+        height: 5rem;
+        display: block;
+        background-color: orange;
+    }
+}
+.nav_drawer {
+    width: 100%;
+    height: 6rem;
+    margin: 0;
+    padding-right: 8%;
+    @include mixins.flex(row, flex-end, center);
+    background-color: snow;
+
+    nav {
+        color: black;
+        width: 100%;
+        @include mixins.flex(row, flex-end, center);
+
+        ul {
+            width: 50%;
+            @include mixins.flex(row, space-evenly, center);
+        }
+    }
+}
