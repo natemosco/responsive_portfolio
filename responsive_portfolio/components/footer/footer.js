@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Social_Icons from "../social_icons";
 export default function Footer() {
     return (
-        <footer className={style.footer}>
+        <footer className={style.footer} id="footer">
             <section className={style.contact}>
                 <div>
                     <pre>ADDRESS </pre>
@@ -30,10 +30,14 @@ export default function Footer() {
             <section className={style.credits}>
                 <i>
                     {" "}
-                    Photos by <a href="https://unsplash.com/photos/ntX2TjKrzLc">
+                    Photos by{" "}
+                    <a href="https://unsplash.com/photos/ntX2TjKrzLc" target="blank">
                         Gabriel Beaudry
                     </a>{" "}
-                    and <a href="https://www.mjdobbsphotography.com/">Melissa Dobbs</a>
+                    and{" "}
+                    <a href="https://www.mjdobbsphotography.com/" target="blank">
+                        Melissa Dobbs
+                    </a>
                 </i>
                 <span>Original Web Design: © Nathaniel Mosco</span>
             </section>

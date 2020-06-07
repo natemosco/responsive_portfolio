@@ -27,7 +27,7 @@ export default function Layout({ children, home, projects, resume, certification
                 {home ? (
                     <div className={style.splash} />
                 ) : (
-                    <>
+                    <div>
                         <Link href="/">
                             <a>
                                 <img
@@ -42,7 +42,7 @@ export default function Layout({ children, home, projects, resume, certification
                                 <a>{name}</a>
                             </Link>
                         </h2>
-                    </>
+                    </div>
                 )}
             </header>
             <main>{children}</main>

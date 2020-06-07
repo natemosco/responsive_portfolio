@@ -28,7 +28,7 @@
         transition: color 200ms;
     }
     .nav_options {
-        width: 15rem;
+        width: 17rem;
         margin-right: -2rem;
         @include mixins.flex(row, space-between, center);
         .menu_toggle:hover {
@@ -42,13 +42,11 @@
         }
         .social_icons {
             @include mixins.flex(row, space-evenly, center);
-            width: 50%;
-            // height: 50rem;
+            width: 60%;
             .github_icon {
                 color: white;
                 &:hover {
                     color: black;
-                    // color: #f4cbb2;
                     cursor: pointer;
                 }
             }

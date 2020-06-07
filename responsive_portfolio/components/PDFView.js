@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Document, Page } from "react-pdf";
+import style from "./PDFView.module.scss";
 
 function MyApp() {
     const [numPages, setNumPages] = useState(null);
@@ -12,7 +13,7 @@ function MyApp() {
     return (
         <div>
             <Document file="/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} />
+                <Page className={style.pdf} pageNumber={pageNumber} />
             </Document>
             <p>
                 Page {pageNumber} of {numPages}

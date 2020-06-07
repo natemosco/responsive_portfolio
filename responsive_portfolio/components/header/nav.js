@@ -43,20 +43,23 @@ export default function Nav() {
                         <Link href="/">
                             <li>Home</li>
                         </Link>
-                        <Link href="/Projects">
+                        <Link href="/projects">
                             <li>Projects</li>
                         </Link>
                         <Link href="/resume">
                             <li>Resume</li>
                         </Link>
-                        <Link href="/Certifications">
+                        {/* <Link href="/certifications">
                             <li>Certifications</li>
                         </Link>
                         <Link href="/blog/">
                             <li>Blog</li>
-                        </Link>
+                        </Link> */}
                     </ul>
-                    <button className="contact">Contact</button>
+                    {/* <a href="#footer"> */}
+                    <button className="contact">
+                        <a href="#footer">Contact</a>
+                    </button>
                 </nav>
             </div>
         </div>
