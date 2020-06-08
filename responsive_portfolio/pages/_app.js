@@ -18,6 +18,7 @@ import {
     faToggleOn,
     faHome,
     faTimes,
+    faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -32,7 +33,8 @@ library.add(
     faToggleOff,
     faToggleOn,
     faHome,
-    faTimes
+    faTimes,
+    faDownload
 );
 
 export default function MyApp({ Component, pageProps }) {

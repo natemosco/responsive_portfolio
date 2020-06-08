@@ -24,13 +24,15 @@ export default function Nav() {
                 />
                 <div className={style.nav_options}>
                     <div className={style.menu_toggle}>
-                        <FontAwesomeIcon
-                            icon={menuOpen ? "times" : "caret-down"}
-                            size="1x"
-                            onClick={toggleMenu}
-                            inverse
-                            className={style.icon}
-                        />
+                        <a onClick={toggleMenu}>
+                            <FontAwesomeIcon
+                                icon={menuOpen ? "times" : "caret-down"}
+                                size="1x"
+                                onClick={toggleMenu}
+                                inverse
+                                className={style.icon}
+                            />
+                        </a>
                         <h3 onClick={toggleMenu}>Menu</h3>
                     </div>
                     <Social_Icons className={style.social_icons} stylesheet={style} size={"2x"} />
@@ -41,25 +43,35 @@ export default function Nav() {
                 <nav>
                     <ul>
                         <Link href="/">
-                            <li>Home</li>
+                            <a>
+                                <li>Home</li>
+                            </a>
                         </Link>
                         <Link href="/projects">
-                            <li>Projects</li>
+                            <a>
+                                <li>Projects</li>
+                            </a>
                         </Link>
                         <Link href="/resume">
-                            <li>Resume</li>
+                            <a>
+                                <li>Resume</li>
+                            </a>
                         </Link>
                         {/* <Link href="/certifications">
-                            <li>Certifications</li>
+                            <a>
+                                <li>Certifications</li>
+                            </a>
                         </Link>
                         <Link href="/blog/">
-                            <li>Blog</li>
+                            <a>
+                                <li>Blog</li>
+                            </a>
                         </Link> */}
                     </ul>
                     {/* <a href="#footer"> */}
-                    <button className="contact">
-                        <a href="#footer">Contact</a>
-                    </button>
+                    <a href="#footer">
+                        <button className="contact">Contact</button>
+                    </a>
                 </nav>
             </div>
         </div>

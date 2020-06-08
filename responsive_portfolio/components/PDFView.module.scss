@@ -1,3 +1,16 @@
+@use '../scss/mixins';
+
 .pdf {
     position: initial !important;
+    @include mixins.flex(column, center, center);
+    canvas {
+        height: 100% !important;
+        width: 90% !important;
+    }
+    div {
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        z-index: -2;
+    }
 }

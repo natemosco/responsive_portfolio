@@ -24,10 +24,9 @@ export default function Layout({ children, home, projects, resume, certification
             </Head>
             <Nav />
             <header className={style.header}>
-                {home ? (
-                    <div className={style.splash} />
-                ) : (
-                    <div>
+                {home && <div className={style.splash} />}
+                {blog && (
+                    <div className={style.image_container}>
                         <Link href="/">
                             <a>
                                 <img
@@ -37,23 +36,23 @@ export default function Layout({ children, home, projects, resume, certification
                                 />
                             </a>
                         </Link>
-                        <h2>
-                            <Link href="/">
-                                <a>{name}</a>
-                            </Link>
-                        </h2>
+                        <Link href="/">
+                            <a>
+                                <h2>{name}</h2>
+                            </a>
+                        </Link>
                     </div>
                 )}
             </header>
             <main>{children}</main>
-            {!home && (
+            {(blog || certifications) && (
                 <div className={style.backToHome}>
                     <Link href="/">
                         <a>← Back to home</a>
                     </Link>
                 </div>
             )}
-            <Footer home />
+            <Footer />
         </div>
     );
 }

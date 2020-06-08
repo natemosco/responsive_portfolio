@@ -1,1 +1,8 @@
 @use "scss/reset";
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: url("/images/bg-pattern.jpg");
+}

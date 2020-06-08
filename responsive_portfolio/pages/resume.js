@@ -1,22 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
 import PDFView from "../components/PDFView";
+import Download from "../components/download";
 export default function Resume() {
     return (
         <div className="container">
-            <Layout>
+            <Layout resume>
                 <main>
-                    {/* <iframe
-                        // srcDoc="/lasttest.html"
-                        src="https://resume.creddle.io/resume/xfv2owmajb"
-                        frameborder="0"
-                        height="1300px"
-                        width="45%"
-                    ></iframe> */}
+                    <Download />
                     <PDFView />
-                    <a href="/Resume.pdf" download="Nathaniel Mosco's Resume.pdf">
-                        <button>download pdf</button>
-                    </a>
                 </main>
             </Layout>
             <style jsx>{`

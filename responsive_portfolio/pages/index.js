@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../components/layout";
 import Skills from "../components/skills";
 
@@ -17,8 +18,13 @@ export default function Home() {
 
             <Layout home>
                 <main>
-                    <h2> About Me</h2>
                     <Skills />
+                    <Link href="/projects" className="projects_link">
+                        <a>
+                            <h3>See Projects Here</h3>
+                        </a>
+                    </Link>
+                    <h2> About Me</h2>
                     <p className="description">
                         I'm a web developer. I love web design and problem solving. I am here to
                         help you with your web development needs. I am passionate about learning,
@@ -55,8 +61,17 @@ export default function Home() {
                     align-items: center;
                 }
                 h2 {
-                    font-size: 2.5rem;
+                    font-size: 2.2rem;
                     margin: 1rem;
+                }
+                h3 {
+                    font-size: 1.8rem;
+                    margin: 3rem;
+                }
+                h3:hover {
+                    color: blue;
+                    background-color: #f5f5f58c;
+                    border-radius: 15%;
                 }
 
                 a {

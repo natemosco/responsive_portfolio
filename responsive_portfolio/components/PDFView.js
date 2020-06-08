@@ -15,9 +15,9 @@ function MyApp() {
             <Document file="/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
                 <Page className={style.pdf} pageNumber={pageNumber} />
             </Document>
-            <p>
+            {/* <p>
                 Page {pageNumber} of {numPages}
-            </p>
+            </p> */}
         </div>
     );
 }

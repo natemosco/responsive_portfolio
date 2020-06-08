@@ -6,7 +6,7 @@ import * as Icon from "./svg";
 export default function skills() {
     return (
         <div className={style.svg_container}>
-            <p>My Skillset Includes:</p>
+            <h2>My Skillset Includes:</h2>
             <div className={style.icons}>
                 <Icon.PythonSvg />
                 <Icon.JavascriptSvg />
