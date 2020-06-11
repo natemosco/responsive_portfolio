@@ -33,13 +33,14 @@ export default function Projects() {
                         </p>
                         <div className="icon_div">
                             <a
+                                href="https://github.com/bw-spotify-oct/Front-End"
+                                target="blank"
                                 onMouseEnter={() => {
                                     setSpotifyGithub(true);
                                 }}
                                 onMouseLeave={() => {
                                     setSpotifyGithub(false);
                                 }}
-                                href="https://github.com/bw-spotify-oct/Front-End"
                             >
                                 <GithubSvg color={spotifyGithub ? "#d2b48c" : "black"} />
                                 Repository
@@ -47,6 +48,7 @@ export default function Projects() {
 
                             <a
                                 href="https://spotify-song-suggester-oct.netlify.app/"
+                                target="blank"
                                 onMouseEnter={() => {
                                     setSpotifyDeployed(true);
                                 }}
@@ -72,19 +74,21 @@ export default function Projects() {
                         </p>
                         <div className="icon_div">
                             <a
+                                href="https://github.com/natemosco/tagger-be"
+                                target="blank"
                                 onMouseEnter={() => {
                                     setBeTaggerGithub(true);
                                 }}
                                 onMouseLeave={() => {
                                     setBeTaggerGithub(false);
                                 }}
-                                href="https://github.com/natemosco/tagger-be"
                             >
                                 <GithubSvg color={beTaggerGithub ? "#d2b48c" : "black"} />
                                 Repository
                             </a>
                             <a
                                 href="https://tagger-be-dev.herokuapp.com/"
+                                target="blank"
                                 onMouseEnter={() => setBeTaggerDeployed(true)}
                                 onMouseLeave={() => setBeTaggerDeployed(false)}
                             >
@@ -109,19 +113,21 @@ export default function Projects() {
                         </p>
                         <div className="icon_div">
                             <a
+                                href="https://github.com/natemosco/tagger-fe"
+                                target="blank"
                                 onMouseEnter={() => {
                                     setFeTaggerGithub(true);
                                 }}
                                 onMouseLeave={() => {
                                     setFeTaggerGithub(false);
                                 }}
-                                href="https://github.com/natemosco/tagger-fe"
                             >
                                 <GithubSvg color={feTaggerGithub ? "#d2b48c" : "black"} />
                                 Repository
                             </a>
                             <a
                                 href="https://tagger-fe.herokuapp.com/"
+                                target="blank"
                                 onMouseEnter={() => setFeTaggerDeployed(true)}
                                 onMouseLeave={() => setFeTaggerDeployed(false)}
                             >
@@ -146,19 +152,21 @@ export default function Projects() {
                         </p>
                         <div className="icon_div">
                             <a
+                                href="https://github.com/Build-Week-CoMake/Front-End"
+                                target="blank"
                                 onMouseEnter={() => {
                                     setComakeGithub(true);
                                 }}
                                 onMouseLeave={() => {
                                     setComakeGithub(false);
                                 }}
-                                href="https://github.com/Build-Week-CoMake/Front-End"
                             >
                                 <GithubSvg color={comakeGithub ? "#d2b48c" : "black"} />
                                 repository
                             </a>
                             <a
                                 href="https://comake-bw.now.sh/"
+                                target="blank"
                                 onMouseEnter={() => setComakeDeployed(true)}
                                 onMouseLeave={() => setComakeDeployed(false)}
                             >
