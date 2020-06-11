@@ -93,7 +93,8 @@ export default function Projects() {
                     <div className="card">
                         <h3> Frontend Tagger Email Client</h3>
                         <p>
-                            React | Redux | OAuth | Styled-Components | Sass | Axios | Moment <br />
+                            React | Redux | OAuth | Styled-Components | Sass | Axios | Moment |
+                            Heroku <br />
                             This Front-End application Solves the issue of locating similar emails,
                             fuzzy-searching for emails, and searching by topic is solved through
                             integrating Data Structures and Algorithms to create a relational map
@@ -127,7 +128,8 @@ export default function Projects() {
                     <div className="card">
                         <h3>Co-Make</h3>
                         <p>
-                            React | Use Context | Styled-Components | Axios | Yup | Animate-CSS{" "}
+                            React | Use Context | Styled-Components | Axios | Yup | Animate-CSS |
+                            Zeit
                             <br />
                             This Front-End application is a simple platform to create, vote, and
                             escalate issues in your local area or within your business. All issues

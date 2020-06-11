@@ -52,7 +52,7 @@ export default function Layout({ children, home, projects, resume, certification
                     </Link>
                 </div>
             )}
-            <Footer />
+            {home ? <Footer home /> : <Footer />}
         </div>
     );
 }

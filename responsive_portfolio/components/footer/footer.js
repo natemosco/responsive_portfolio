@@ -2,7 +2,7 @@ import React from "react";
 import style from "./footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Social_Icons from "../social_icons";
-export default function Footer() {
+export default function Footer({ home }) {
     return (
         <footer className={style.footer} id="footer">
             <section className={style.contact}>
@@ -28,19 +28,22 @@ export default function Footer() {
                 </div>
             </section>
             <section className={style.credits}>
-                <span>
-                    {" "}
-                    Photos by{" "}
-                    <a href="https://unsplash.com/photos/ntX2TjKrzLc" target="blank">
-                        Gabriel Beaudry
-                    </a>
-                    {"  "}
-                    and{" "}
-                    <a href="https://www.mjdobbsphotography.com/" target="blank">
-                        MJ Dobbs Photography
-                    </a>
-                </span>
-                <span>{" | "}Original Web Design: © Nathaniel Mosco</span>
+                {home && (
+                    <span>
+                        {" "}
+                        Photos by{" "}
+                        <a href="https://unsplash.com/photos/ntX2TjKrzLc" target="blank">
+                            Gabriel Beaudry
+                        </a>
+                        {"  "}
+                        and{" "}
+                        <a href="https://www.mjdobbsphotography.com/" target="blank">
+                            MJ Dobbs Photography
+                        </a>
+                        {" | "}
+                    </span>
+                )}
+                <span>Original Web Design: © Nathaniel Mosco</span>
             </section>
         </footer>
     );

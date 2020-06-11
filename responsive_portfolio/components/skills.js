@@ -22,6 +22,7 @@ export default function skills() {
                 <Icon.SassSvg />
                 <Icon.ZeitSvg />
                 <Icon.HerokuSvg />
+                <Icon.NetlifySvg />
                 <Icon.GithubSvg />
             </div>
         </div>
