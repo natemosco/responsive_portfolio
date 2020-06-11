@@ -42,6 +42,7 @@ export default function Projects() {
                                 href="https://github.com/bw-spotify-oct/Front-End"
                             >
                                 <GithubSvg color={spotifyGithub ? "#d2b48c" : "black"} />
+                                Repository
                             </a>
 
                             <a
@@ -54,6 +55,7 @@ export default function Projects() {
                                 }}
                             >
                                 <NetlifySvg color={spotifyDeployed ? "#d2b48c" : "#00C7B7"} />
+                                Spotify Webpage
                             </a>
                         </div>
                     </div>
@@ -79,6 +81,7 @@ export default function Projects() {
                                 href="https://github.com/natemosco/tagger-be"
                             >
                                 <GithubSvg color={beTaggerGithub ? "#d2b48c" : "black"} />
+                                Repository
                             </a>
                             <a
                                 href="https://tagger-be-dev.herokuapp.com/"
@@ -86,6 +89,7 @@ export default function Projects() {
                                 onMouseLeave={() => setBeTaggerDeployed(false)}
                             >
                                 <HerokuSvg color={beTaggerDeployed ? "#d2b48c" : "#430098"} />
+                                Tagger API
                             </a>
                         </div>
                     </div>
@@ -114,6 +118,7 @@ export default function Projects() {
                                 href="https://github.com/natemosco/tagger-fe"
                             >
                                 <GithubSvg color={feTaggerGithub ? "#d2b48c" : "black"} />
+                                Repository
                             </a>
                             <a
                                 href="https://tagger-fe.herokuapp.com/"
@@ -121,6 +126,7 @@ export default function Projects() {
                                 onMouseLeave={() => setFeTaggerDeployed(false)}
                             >
                                 <HerokuSvg color={feTaggerDeployed ? "#d2b48c" : "#430098"} />
+                                Tagger Webpage
                             </a>
                         </div>
                     </div>
@@ -149,6 +155,7 @@ export default function Projects() {
                                 href="https://github.com/Build-Week-CoMake/Front-End"
                             >
                                 <GithubSvg color={comakeGithub ? "#d2b48c" : "black"} />
+                                repository
                             </a>
                             <a
                                 href="https://comake-bw.now.sh/"
@@ -156,6 +163,7 @@ export default function Projects() {
                                 onMouseLeave={() => setComakeDeployed(false)}
                             >
                                 <ZeitSvg color={comakeDeployed ? "#d2b48c" : "black"} />
+                                Co-Make Webpage
                             </a>
                         </div>
                     </div>
@@ -208,12 +216,6 @@ export default function Projects() {
                 .title a {
                     color: #0070f3;
                     text-decoration: none;
-                }
-
-                .title a:hover,
-                .title a:focus,
-                .title a:active {
-                    text-decoration: underline;
                 }
 
                 .icon_div {
@@ -274,6 +276,13 @@ export default function Projects() {
                 .card:active {
                     color: #0070f3;
                     border-color: #0070f3;
+                }
+
+                .card:hover a {
+                    color: black;
+                }
+                .card:hover a:hover {
+                    color: #d2b48c;
                 }
 
                 .card h3 {
