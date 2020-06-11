@@ -28,18 +28,19 @@ export default function Footer() {
                 </div>
             </section>
             <section className={style.credits}>
-                <i>
+                <span>
                     {" "}
                     Photos by{" "}
                     <a href="https://unsplash.com/photos/ntX2TjKrzLc" target="blank">
                         Gabriel Beaudry
-                    </a>{" "}
+                    </a>
+                    {"  "}
                     and{" "}
                     <a href="https://www.mjdobbsphotography.com/" target="blank">
-                        Melissa Dobbs
+                        MJ Dobbs Photography
                     </a>
-                </i>
-                <span>Original Web Design: © Nathaniel Mosco</span>
+                </span>
+                <span>{" | "}Original Web Design: © Nathaniel Mosco</span>
             </section>
         </footer>
     );
