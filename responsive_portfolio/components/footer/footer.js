@@ -29,7 +29,7 @@ export default function Footer({ home }) {
             </section>
             <section className={style.credits}>
                 {home && (
-                    <span>
+                    <span className={style.photo_credits}>
                         {" "}
                         Photos by{" "}
                         <a href="https://unsplash.com/photos/ntX2TjKrzLc" target="blank">
@@ -39,8 +39,7 @@ export default function Footer({ home }) {
                         and{" "}
                         <a href="https://www.mjdobbsphotography.com/" target="blank">
                             MJ Dobbs Photography
-                        </a>
-                        {" | "}
+                        </a>{" "}
                     </span>
                 )}
                 <span>Original Web Design: © Nathaniel Mosco</span>

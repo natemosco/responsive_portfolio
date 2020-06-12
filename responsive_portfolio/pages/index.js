@@ -18,15 +18,15 @@ export default function Home() {
 
             <Layout home>
                 <main>
-                    <Skills />
                     <Link href="/projects" className="projects_link">
                         <a>
                             <h3>See Projects Here</h3>
                         </a>
                     </Link>
+                    <Skills />
                     <h2> About Me</h2>
                     <p className="description">
-                        I'm a web developer. I love web design and problem solving. I am here to
+                        I'm a web developer. I love web design and problem solving and am here to
                         help you with your web development needs. I am passionate about learning,
                         intuitive design, and database management. In fact, I learned to use a new
                         technology, Next.JS, to build this portfolio.
@@ -62,11 +62,11 @@ export default function Home() {
                 }
                 h2 {
                     font-size: 2.2rem;
-                    margin: 1rem;
+                    margin: 3.5rem 0 0 0;
                 }
                 h3 {
                     font-size: 1.8rem;
-                    margin: 3rem;
+                    margin: 0.5rem 0;
                 }
                 h3:hover {
                     color: blue;
@@ -76,7 +76,6 @@ export default function Home() {
 
                 a {
                     color: inherit;
-                    text-decoration: none;
                 }
 
                 .title a {

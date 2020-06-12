@@ -31,7 +31,8 @@
 
 .splash {
     width: 100%;
-    min-height: 72vh;
+    min-height: 62vh;
     background: url("../public/images/alt-large-splash.jpg") 100% / cover no-repeat fixed;
+    background-position-x: center;
     color: white;
 }

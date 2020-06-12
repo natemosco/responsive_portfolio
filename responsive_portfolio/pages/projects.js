@@ -26,7 +26,8 @@ export default function Projects() {
                         <p>
                             React | Spotify API | Axios | Axios-OAuth-client | Styled-Components |
                             Material-UI | Netlify
-                            <br />A Front-End Application that interfaces with the Spotify API and
+                            <br />
+                            <br /> A Front-End Application that interfaces with the Spotify API and
                             uses Data Structures and Algorithms to narrow search functionality to
                             match either the trending music preferences or the designated search
                             criteria.
@@ -67,6 +68,7 @@ export default function Projects() {
                         <p>
                             Node | Express | IMAP | OAuth | Jest | Heroku
                             <br />
+                            <br />
                             This Backend API fetches emails from an existing email account using
                             IMAP and parses through the incoming data to stream the emails to the
                             Front-End application. Additionally, this process stores relevant
@@ -103,13 +105,13 @@ export default function Projects() {
                         <p>
                             React | Redux | OAuth | Styled-Components | Sass | Axios | Moment |
                             Heroku <br />
-                            This Front-End application Solves the issue of locating similar emails,
-                            fuzzy-searching for emails, and searching by topic is solved through
-                            integrating Data Structures and Algorithms to create a relational map
-                            based on key word analysis. Paired with FuseJS the mapped emails can be
-                            filtered down to the most relevant search query allowing for a client to
-                            retain thousands of emails without stumbling through to find the exact
-                            email in mind.
+                            <br />
+                            This Front-End application Solves the issue of locating similar emails
+                            by topic, and without exact keywords. Integrating Data Structures and
+                            Algorithms to create a relational map of email contents and pairing with
+                            FuseJS the mapped emails can be filtered down to the most relevant
+                            search query allowing for a client to retain thousands of emails without
+                            stumbling to find the exact email in mind.
                         </p>
                         <div className="icon_div">
                             <a
@@ -142,6 +144,7 @@ export default function Projects() {
                         <p>
                             React | Use Context | Styled-Components | Axios | Yup | Animate-CSS |
                             Zeit
+                            <br />
                             <br />
                             This Front-End application is a simple platform to create, vote, and
                             escalate issues in your local area or within your business. All issues
@@ -269,7 +272,8 @@ export default function Projects() {
 
                 .card {
                     margin: 1rem;
-                    flex-basis: 40%;
+                    height: 30rem;
+                    flex-basis: 45%;
                     padding: 1.5rem;
                     text-align: left;
                     color: inherit;
@@ -277,6 +281,26 @@ export default function Projects() {
                     border: 1px solid #eaeaea;
                     border-radius: 10px;
                     transition: color 0.15s ease, border-color 0.15s ease;
+                }
+                @media (max-width: 1300px) {
+                    .card {
+                        height: 33rem;
+                    }
+                }
+                @media (max-width: 1100px) {
+                    .card {
+                        height: 36rem;
+                    }
+                }
+                @media (max-width: 970px) {
+                    .card {
+                        height: 38rem;
+                    }
+                }
+                @media (max-width: 890px) {
+                    .card {
+                        height: 45rem;
+                    }
                 }
 
                 .card:hover,
@@ -294,12 +318,13 @@ export default function Projects() {
                 }
 
                 .card h3 {
-                    margin: 0 0 1rem 0;
+                    margin: 0;
                     font-size: 1.5rem;
                 }
 
                 .card p {
                     margin: 0;
+                    padding: 1rem 0;
                     font-size: 1.25rem;
                     line-height: 1.5;
                 }
@@ -308,7 +333,7 @@ export default function Projects() {
                     height: 1em;
                 }
 
-                @media (max-width: 600px) {
+                @media (max-width: 770px) {
                     .grid {
                         width: 100%;
                         flex-direction: column;
