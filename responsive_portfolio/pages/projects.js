@@ -58,7 +58,7 @@ export default function Projects() {
                                 }}
                             >
                                 <NetlifySvg color={spotifyDeployed ? "#d2b48c" : "#00C7B7"} />
-                                Spotify Webpage
+                                Spotify <br /> Webpage
                             </a>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ export default function Projects() {
                                 onMouseLeave={() => setBeTaggerDeployed(false)}
                             >
                                 <HerokuSvg color={beTaggerDeployed ? "#d2b48c" : "#430098"} />
-                                Tagger API
+                                Tagger <br /> API
                             </a>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ export default function Projects() {
                                 onMouseLeave={() => setFeTaggerDeployed(false)}
                             >
                                 <HerokuSvg color={feTaggerDeployed ? "#d2b48c" : "#430098"} />
-                                Tagger Webpage
+                                Tagger <br /> Webpage
                             </a>
                         </div>
                     </div>
@@ -165,7 +165,7 @@ export default function Projects() {
                                 }}
                             >
                                 <GithubSvg color={comakeGithub ? "#d2b48c" : "black"} />
-                                repository
+                                Raepository
                             </a>
                             <a
                                 href="https://comake-bw.now.sh/"
@@ -174,7 +174,7 @@ export default function Projects() {
                                 onMouseLeave={() => setComakeDeployed(false)}
                             >
                                 <ZeitSvg color={comakeDeployed ? "#d2b48c" : "black"} />
-                                Co-Make Webpage
+                                Co-Make <br /> Webpage
                             </a>
                         </div>
                     </div>

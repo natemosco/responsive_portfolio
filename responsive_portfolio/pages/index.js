@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import Skills from "../components/skills";
+import BulletpointSkills from "../components/bullet_point_skills";
 
 export default function Home() {
     return (
@@ -23,7 +24,8 @@ export default function Home() {
                             <h3>See Projects Here</h3>
                         </a>
                     </Link>
-                    <Skills />
+                    <Skills className="skills_icon_view" />
+                    <BulletpointSkills className="skills_bulletpoint_view" />
                     <h2> About Me</h2>
                     <p className="description">
                         I'm a web developer. I love web design and problem solving and am here to
@@ -38,7 +40,11 @@ export default function Home() {
                         accessible.
                         <br />
                     </p>
-                    <img src="/images/familyphoto.jpg" alt="family photo" />
+                    <img
+                        src="/images/familyphoto.jpg"
+                        alt="family photo"
+                        className="family_photo"
+                    />
                 </main>
             </Layout>
 
@@ -104,6 +110,17 @@ export default function Home() {
                     line-height: 1.5;
                     font-size: 1.5rem;
                     padding: 0 4rem;
+                }
+
+                @media (max-width: 800px) {
+                    .description {
+                        padding: 0 2rem;
+                    }
+                }
+                .family_photo {
+                    max-width: 100%;
+                    padding: 1rem;
+                    height: auto;
                 }
 
                 code {

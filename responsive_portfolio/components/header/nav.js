@@ -30,7 +30,16 @@ export default function Nav() {
                                 size="1x"
                                 onClick={toggleMenu}
                                 inverse
-                                className={style.icon}
+                                className={style.caret_icon}
+                            />
+                        </a>
+                        <a onClick={toggleMenu}>
+                            <FontAwesomeIcon
+                                icon={menuOpen ? "times" : "bars"}
+                                size="1x"
+                                onClick={toggleMenu}
+                                inverse
+                                className={style.hamburger_icon}
                             />
                         </a>
                         <h3 onClick={toggleMenu}>Menu</h3>
@@ -68,7 +77,7 @@ export default function Nav() {
                             </a>
                         </Link> */}
                     </ul>
-                    {/* <a href="#footer"> */}
+
                     <a href="#footer">
                         <button className="contact">Contact</button>
                     </a>

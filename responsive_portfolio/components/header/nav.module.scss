@@ -29,14 +29,22 @@
     }
     .nav_options {
         width: 17rem;
-        margin-right: -2rem;
+        padding-left: 2rem;
         @include mixins.flex(row, space-between, center);
-        .menu_toggle:hover {
+        .menu_toggle {
+            .hamburger_icon {
+                display: none;
+                color: white;
+            }
+        }
+        .menu_toggle:hover,
+        .menu_toggle:active {
             cursor: pointer;
             h3 {
                 color: black;
             }
-            .icon {
+            .x_icon,
+            .hamburger_icon {
                 color: black;
             }
         }
@@ -66,6 +74,21 @@
                 }
             }
         }
+        @media (max-width: 800px) {
+            width: 8rem;
+            .social_icons {
+                display: none;
+            }
+            .menu_toggle {
+                .hamburger_icon {
+                    display: inherit;
+                    color: white;
+                }
+                .caret_icon {
+                    display: none;
+                }
+            }
+        }
     }
     li {
         background-color: snow;
@@ -77,6 +100,9 @@
 }
 .container_expanded {
     height: 10rem;
+    @media (max-width: 800px) {
+        height: 16rem;
+    }
 }
 
 .menu_toggle {
@@ -113,6 +139,19 @@
         ul {
             width: 50%;
             @include mixins.flex(row, space-evenly, center);
+        }
+    }
+    @media (max-width: 800px) {
+        height: 12rem;
+        nav {
+            height: 8rem;
+            @include mixins.flex(column, space-evenly, center);
+            ul {
+                height: 5rem;
+                @include mixins.flex(column, space-between, center);
+                margin: 0;
+                padding: 0;
+            }
         }
     }
 }
