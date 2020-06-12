@@ -165,7 +165,7 @@ export default function Projects() {
                                 }}
                             >
                                 <GithubSvg color={comakeGithub ? "#d2b48c" : "black"} />
-                                Raepository
+                                Repository
                             </a>
                             <a
                                 href="https://comake-bw.now.sh/"
