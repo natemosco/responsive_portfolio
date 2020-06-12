@@ -45,7 +45,7 @@ export default function Home() {
             <style jsx>{`
                 .container {
                     min-height: 100vh;
-                    width: 100%;
+                    width: 100vw;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
