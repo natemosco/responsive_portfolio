@@ -9,7 +9,7 @@
     overflow-y: hidden;
     width: 100vw;
     background-color: #ffa726;
-    @include mixins.flex(column, flex-start, center);
+    // @include mixins.flex(column, flex-start, center);
     transition: height 0.3s linear;
 
     li,
@@ -117,8 +117,8 @@
     padding: 30px 3%;
 
     .logo {
-        width: 4rem;
-        height: 5rem;
+        width: 3.5rem;
+        height: 4rem;
         display: block;
         background-color: orange;
     }
