@@ -6,7 +6,7 @@
     .embed {
         height: 100%;
         width: 100%;
-        @media (max-width: 370px) {
+        @media (max-width: 400px) {
             display: none;
         }
     }
@@ -35,7 +35,7 @@
         display: none;
         height: 100%;
         width: 100%;
-        @media (max-width: 3700px) {
+        @media (max-width: 400px) {
             @include mixins.flex(column, center, center);
         }
     }
