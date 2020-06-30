@@ -1,25 +1,11 @@
-import React, { useState } from "react";
-import { Document, Page } from "react-pdf";
-import style from "./PDFView.module.scss";
+import React, { useState, useEffect } from "react";
 
-function MyApp() {
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
-
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-    }
-
+function PDFView() {
     return (
-        <div>
-            <Document file="/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-                <Page className={style.pdf} pageNumber={pageNumber} />
-            </Document>
-            {/* <p>
-                Page {pageNumber} of {numPages}
-            </p> */}
+        <div style={{ height: "95%", width: "50%" }}>
+            <embed src="/Resume.pdf#view=FitH" style={{ height: "100%", width: "100%" }} />
         </div>
     );
 }
 
-export default MyApp;
+export default PDFView;

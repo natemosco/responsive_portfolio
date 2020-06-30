@@ -7,7 +7,7 @@ export default function Resume() {
         <div className="container">
             <Layout resume>
                 <main>
-                    <Download />
+                    {/* <Download /> */}
                     <PDFView />
                 </main>
             </Layout>
@@ -22,9 +22,8 @@ export default function Resume() {
                 }
 
                 main {
-                    // padding: 5rem 0;
                     flex: 1;
-                    min-height: 80vh;
+                    height: 95vh;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
