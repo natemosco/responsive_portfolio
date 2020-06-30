@@ -9,7 +9,6 @@
     overflow-y: hidden;
     width: 100vw;
     background-color: #ffa726;
-    // @include mixins.flex(column, flex-start, center);
     transition: height 0.3s linear;
 
     li,
