@@ -1,13 +1,11 @@
 import React from "react";
 import Layout from "../components/layout";
 import PDFView from "../components/PDFView";
-import Download from "../components/download";
 export default function Resume() {
     return (
         <div className="container">
             <Layout resume>
                 <main>
-                    {/* <Download /> */}
                     <PDFView />
                 </main>
             </Layout>
@@ -121,6 +119,9 @@ export default function Resume() {
                 }
 
                 @media (max-width: 600px) {
+                    main {
+                        height: 65vh;
+                    }
                     .grid {
                         width: 100%;
                         flex-direction: column;

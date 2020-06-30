@@ -1,16 +1,42 @@
 @use '../scss/mixins';
 
-.pdf {
-    position: initial !important;
-    @include mixins.flex(column, center, center);
-    canvas {
-        height: 100% !important;
-        width: 90% !important;
+.embed_container {
+    height: 100%;
+    width: 60%;
+    .embed {
+        height: 100%;
+        width: 100%;
+        @media (max-width: 400px) {
+            display: none;
+        }
     }
-    div {
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        z-index: -2;
+    @media (max-width: 1300px) {
+        width: 70%;
+    }
+    @media (max-width: 1100px) {
+        width: 80%;
+    }
+    @media (max-width: 800px) {
+        width: 90%;
+        height: 95%;
+    }
+    @media (max-width: 650px) {
+        width: 95%;
+    }
+    @media (max-width: 500px) {
+        width: 100%;
+        height: 85%;
+    }
+    @media (max-width: 400px) {
+        height: 100%;
+        width: 100%;
+    }
+    .small_screen_option {
+        display: none;
+        height: 100%;
+        width: 100%;
+        @media (max-width: 400px) {
+            @include mixins.flex(column, center, center);
+        }
     }
 }

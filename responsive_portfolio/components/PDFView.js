@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import style from "./PDFView.module.scss";
+import Download from "./download";
 
 function PDFView() {
     return (
-        <div style={{ height: "95%", width: "50%" }}>
-            <embed src="/Resume.pdf#view=FitH" style={{ height: "100%", width: "100%" }} />
+        <div className={style.embed_container}>
+            <embed src="/Resume.pdf#view=FitH" className={style.embed} />
+            <div className={style.small_screen_option}>
+                <Download />
+            </div>
         </div>
     );
 }

@@ -52,6 +52,12 @@
                 border-right: none;
                 border-left: 2px solid #ddd;
             }
+            @media (max-width: 375px) {
+                width: 90%;
+                @include mixins.flex(row, space-between, center);
+                border-right: none;
+                border-left: 2px solid #ddd;
+            }
         }
 
         .social_icons {
