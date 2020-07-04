@@ -5,7 +5,7 @@ import Download from "./download";
 function PDFView() {
     return (
         <div className={style.embed_container}>
-            <embed src="/Resume.pdf#view=FitH" className={style.embed} />
+            <embed src="/Nate_Mosco_Resume.pdf#view=FitH" className={style.embed} />
             <div className={style.small_screen_option}>
                 <Download />
             </div>
